@@ -9,12 +9,10 @@ export {
     NumericParameters,
     TextParameters,
     OptionParameters,
-    FlagsIds,
-    NumericParametersIds,
-    TextParametersIds,
-    OptionParametersIds,
-    AllSettings
 } from './Config/Config';
+
+export type{FlagsIds,NumericParametersIds,TextParametersIds,OptionParametersIds,AllSettings}from './Config/Config';
+
 export { SettingBase } from './Config/SettingBase';
 export { SettingFlag } from './Config/SettingFlag';
 export { SettingNumber } from './Config/SettingNumber';
@@ -29,8 +27,13 @@ export { EncoderSettings, InitialSettings, WebRTCSettings } from './DataChannel/
 export { AggregatedStats } from './PeerConnectionController/AggregatedStats';
 export {
     InputCoordTranslator,
+} from './Util/InputCoordTranslator';
+export type{
     UntranslatedCoordUnsigned as UnquantizedAndDenormalizeUnsigned
 } from './Util/InputCoordTranslator';
+
+
+
 export { MessageDirection } from './UeInstanceMessage/StreamMessageController';
 
 export { CandidatePairStats } from './PeerConnectionController/CandidatePairStats';

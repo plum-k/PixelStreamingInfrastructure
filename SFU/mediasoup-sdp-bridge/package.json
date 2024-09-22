@@ -23,6 +23,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "mediasoup-client": "^3.6.41"
+    "mediasoup-client": "^3.7.16"
   }
 }

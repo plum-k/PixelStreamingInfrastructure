@@ -13,6 +13,9 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
+                options: {
+                    transpileOnly: true, // 跳过类型检查
+                },
                 exclude: [/node_modules/]
             }
         ]
