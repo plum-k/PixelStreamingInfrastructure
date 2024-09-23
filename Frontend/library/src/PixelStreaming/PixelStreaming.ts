@@ -87,7 +87,6 @@ export class PixelStreaming {
      */
     constructor(config: Config, overrides?: PixelStreamingOverrides) {
         this.config = config;
-
         if (overrides?.videoElementParent) {
             this._videoElementParent = overrides.videoElementParent;
         }

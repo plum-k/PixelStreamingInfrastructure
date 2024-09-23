@@ -21,6 +21,7 @@ export class WebSocketTransport extends EventEmitter implements ITransport {
 
     constructor() {
         super();
+
     }
 
     /**

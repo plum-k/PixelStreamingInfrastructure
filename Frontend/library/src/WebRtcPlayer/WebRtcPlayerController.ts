@@ -163,8 +163,8 @@ export class WebRtcPlayerController {
             this.afkController.resetAfkWarningTimer();
 
         this.streamMessageController = new StreamMessageController();
-
         // set up websocket methods
+
         this.transport = new WebSocketTransport();
         this.protocol = new SignallingProtocol(this.transport);
         this.protocol.addListener(Messages.config.typeName, (msg: BaseMessage) =>
@@ -783,6 +783,7 @@ export class WebRtcPlayerController {
      * Does the actual reconnect work. Used by the auto reconnect feature to skip the manual flag.
      */
     doReconnect(message: string) {
+
         // if there is no webSocketController return immediately or this will not work
         if (!this.protocol) {
             Logger.Info('This player has no protocol connection.');

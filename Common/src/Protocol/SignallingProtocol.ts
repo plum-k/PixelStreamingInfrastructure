@@ -58,6 +58,7 @@ export class SignallingProtocol extends EventEmitter {
      * @returns True if the connection call succeeded.
      */
     connect(url: string): boolean {
+
         return this.transport.connect(url);
     }
 

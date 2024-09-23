@@ -735,6 +735,7 @@ export class Config {
      * @returns True if the flag is enabled.
      */
     isFlagEnabled(id: FlagsIds): boolean {
+
         return this.flags.get(id).flag as boolean;
     }
 
