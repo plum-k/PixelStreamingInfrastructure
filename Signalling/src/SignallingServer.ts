@@ -58,7 +58,8 @@ export class SignallingServer {
     streamerRegistry: StreamerRegistry;
     playerRegistry: PlayerRegistry;
     startTime: Date;
-
+    streamerServer:WebSocket.Server
+    playerServer:WebSocket.Server
     /**
      * Initializes the server object and sets up listening sockets for streamers
      * players and optionally SFU connections.
@@ -82,7 +83,7 @@ export class SignallingServer {
         }
 
         // Streamer connections
-        const streamerServer = new WebSocket.Server({
+       const streamerServer = this.streamerServer = new WebSocket.Server({
             port: config.streamerPort,
             backlog: 1,
             ...config.streamerWsOptions
@@ -92,7 +93,7 @@ export class SignallingServer {
 
         // Player connections
         const server = config.httpsServer || config.httpServer;
-        const playerServer = new WebSocket.Server({
+        const playerServer = this.playerServer = new WebSocket.Server({
             server: server,
             port: server ? undefined : config.playerPort,
             ...config.playerWsOptions

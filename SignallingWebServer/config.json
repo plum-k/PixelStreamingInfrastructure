@@ -13,7 +13,7 @@
 	"ssl_key_path": "certificates/client-key.pem",
 	"ssl_cert_path": "certificates/client-cert.pem",
 	"https_redirect": true,
-	"rest_api": false,
+	"rest_api": true,
 	"peer_options": "",
 	"log_config": true,
 	"stdin": false,
