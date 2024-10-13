@@ -2,7 +2,9 @@
     "name": "@epicgames-ps/lib-pixelstreamingfrontend-ue5.5",
     "version": "0.2.0",
     "description": "Frontend library for Unreal Engine 5.5 Pixel Streaming",
-    "main": "src/pixelstreamingfrontend.ts",
+    "main": "dist/lib-pixelstreamingfrontend.js",
+    "module": "dist/lib-pixelstreamingfrontend.esm.js",
+    "types": "types/pixelstreamingfrontend.d.ts",
     "sideEffects": false,
     "scripts": {
         "compile": "tsc --build --clean && tsc",
