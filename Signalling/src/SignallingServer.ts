@@ -60,6 +60,10 @@ export class SignallingServer {
     startTime: Date;
     streamerServer:WebSocket.Server
     playerServer:WebSocket.Server
+    kill(){
+        this.streamerServer?.close()
+        this.playerServer?.close()
+    }
     /**
      * Initializes the server object and sets up listening sockets for streamers
      * players and optionally SFU connections.
