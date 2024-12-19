@@ -13,9 +13,9 @@
     "build-dev-all": "npm link ../../library && cd ../../library && npm run build-dev && cd ../implementations/react && npm run build-dev"
   },
   "devDependencies": {
-    "@epicgames-ps/lib-pixelstreamingfrontend-ue5.5": "^0.4.1",
+    "@epicgames-ps/lib-pixelstreamingfrontend-ue5.5": "^0.4.3",
     "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.3",
@@ -24,7 +24,7 @@
     "typescript": "^5.7.2",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.1.0"
+    "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
     "react": "^19.0.0",
